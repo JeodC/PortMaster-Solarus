@@ -9,3 +9,6 @@ Find them on the [Solarus Website](https://solarus-games.org/games/).
 
 ## Disclaimers
 This is just a Solarus runner. Certain games may have issues running on various devices. The games `Ocean's Heart` and `Tunics!` are two that would not function as expected on an Anbernic RG351P running AmberELEC, for example.
+
+## Thanks
+The solarus-run binary provided by Cebion.
