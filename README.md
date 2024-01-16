@@ -12,3 +12,4 @@ This is just a Solarus runner. Certain games may have issues running on various 
 
 ## Thanks
 The solarus-run binary provided by Cebion.
+[Solarus](https://solarus-games.org/)
