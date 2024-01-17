@@ -1,0 +1,61 @@
+	<game>
+		<path>./Hallow's Eve.sh</path>
+		<name>Hallow's Eve</name>
+		<image>./solarus/images/hallows-eve-image.png</image>
+		<rating>0</rating>
+		<releasedate>20201024T210437</releasedate>
+		<developer>Max Mraz</developer>
+		<genre>Action / Adventure, Role playing games / Action RPG</genre>
+	</game>
+	<game id="202814">
+		<path>./Ocean's Heart.sh</path>
+		<name>Ocean's Heart</name>
+		<image>./solarus/images/oceansheart-image.png</image>
+		<rating>0</rating>
+		<releasedate>20210121T000000</releasedate>
+		<developer>Max Mraz</developer>
+		<genre>Role playing games / Action RPG</genre>
+	</game>
+	<game>
+		<path>./Tunics!.sh</path>
+		<name>Tunics!</name>
+		<rating>0</rating>
+		<releasedate>20240117T090238</releasedate>
+		<developer>Legofarmen</developer>
+		<genre>Action, Action / Adventure</genre>
+	</game>
+	<game>
+		<path>./Yarntown.sh</path>
+		<name>Yarntown</name>
+		<image>./solarus/images/yarntown-image.png</image>
+		<rating>0</rating>
+		<releasedate>20200718T100046</releasedate>
+		<developer>Max Mraz</developer>
+		<genre>Role playing games / Action RPG</genre>
+	</game>
+	<game>
+		<path>./zbom.sh</path>
+		<name>The Legend of Zelda: Book of Mudora</name>
+		<image>./solarus/images/loz-bom-image.png</image>
+		<rating>0</rating>
+		<releasedate>2017</releasedate>
+		<developer>Matt Wright</developer>
+		<genre>Adventure</genre>
+	</game>
+		<path>./zmos.sh</path>
+		<name>The Legend of Zelda: Mystery of Solarus</name>
+		<image>./solarus/images/loz-mos-image.png</image>
+		<rating>0</rating>
+		<releasedate>2011</releasedate>
+		<developer>Solarus Team</developer>
+		<genre>Adventure</genre>
+	</game>
+	<game>
+		<path>./zelda_roth.sh</path>
+		<name>The Legend of Zelda: Return of the Hylian</name>
+		<image>./solarus/images/loz-roth-image.png</image>
+		<rating>0</rating>
+		<releasedate>20060101T000000</releasedate>
+		<developer>Vincent Jouillat</developer>
+		<publisher>Vincent Jouillat</publisher>
+	</game>
