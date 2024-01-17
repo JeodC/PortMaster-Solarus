@@ -16,6 +16,7 @@ source $controlfolder/device_info.txt
 
 SOLARUSDIR="/$directory/ports/solarus"
 GAMEDIR="$SOLARUSDIR/games"
+GPTKDIR="$SOLARUSDIR/gptk"
 GAME="zbom"
 
 cd $SOLARUSDIR
@@ -23,8 +24,7 @@ cd $SOLARUSDIR
 # Setup controls
 $ESUDO chmod 666 /dev/tty1
 $ESUDO chmod 666 /dev/uinput
-$GPTOKEYB "solarus-run" -xbox360 & 
-
+$GPTOKEYB "solarus-run" -c "$GPTKDIR/${GAME}.gptk" & 
 # Run the game
 chmod +xwr ./solarus-run
 ./solarus-run "$GAMEDIR/$GAME.solarus" 2>&1 | tee -a ./"${GAME}_log.txt"

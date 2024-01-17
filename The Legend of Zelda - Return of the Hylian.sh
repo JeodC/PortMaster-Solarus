@@ -16,6 +16,7 @@ source $controlfolder/device_info.txt
 
 SOLARUSDIR="/$directory/ports/solarus"
 GAMEDIR="$SOLARUSDIR/games"
+GPTKDIR="$SOLARUSDIR/gptk"
 GAME="zelda-roth-se-v1.2.1"
 
 cd $SOLARUSDIR
@@ -23,7 +24,7 @@ cd $SOLARUSDIR
 # Setup controls
 $ESUDO chmod 666 /dev/tty1
 $ESUDO chmod 666 /dev/uinput
-$GPTOKEYB "solarus-run" -xbox360 & 
+$GPTOKEYB "solarus-run" -c "$GPTKDIR/zroth.gptk" & 
 
 # Run the game
 chmod +xwr ./solarus-run
