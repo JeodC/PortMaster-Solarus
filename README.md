@@ -5,7 +5,9 @@ By running Solarus through PortMaster, we can provide additional libraries as ne
 
 ## Usage
 Unzip to ports folder. Scripts provided are an example, and an easy template. For different games, one only needs to change the `$GAME` variable. Games (the `.solarus` files) need to be downloaded separately and added to the `solarus/games` folder. 
-Find them on the [Solarus Website](https://solarus-games.org/games/).
+Find them on the [Solarus Website](https://solarus-games.org/games/).  
+
+You can copy the contents of `gamelist.xml` into your own `gamelist.xml` file.
 
 ## Disclaimers
 This is just a Solarus runner. Certain games may have issues running on various devices. The games `Ocean's Heart`, `Hallow's Eve`, and `Tunics!` are a few that do not function as expected on an Anbernic RG351P running AmberELEC, for example.
