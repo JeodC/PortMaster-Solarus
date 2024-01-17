@@ -28,7 +28,7 @@ $GPTOKEYB "solarus-run" -c "$GPTKDIR/zroth.gptk" &
 
 # Run the game
 chmod +xwr ./solarus-run
-./solarus-run "$GAMEDIR/$GAME.solarus" 2>&1 | tee -a ./"${GAME}_log.txt"
+./solarus-run "$GAMEDIR/$GAME.solarus" 2>&1 | tee -a ./"logs/${GAME}_log.txt"
 $ESUDO kill -9 $(pidof gptokeyb)
 $ESUDO systemctl restart oga_events & 
 printf "\033c" >> /dev/tty1
