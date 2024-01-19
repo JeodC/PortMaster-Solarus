@@ -13,7 +13,7 @@ get_controls
 
 # Set variables
 SOLARUSDIR="/$directory/ports/solarus"
-OLDSAVE="storage/roms/gamedata/solarus/saves"
+CONFIG="storage/roms/gamedata/solarus/saves"
 GAMEDIR="$SOLARUSDIR/games"
 GPTKDIR="$SOLARUSDIR/gptk"
 GAME="hallowseve"
@@ -31,7 +31,7 @@ $ESUDO chmod 666 /dev/uinput
 $GPTOKEYB "solarus-run" -c "$GPTKDIR/${GAME}.gptk" & 
 
 # Run the game
-chmod +xwr ./solarus-lua-run
+chmod +xwr ./solarus-run
 ./solarus-run "$GAMEDIR/$GAME.solarus" 2>&1 | tee -a ./"logs/${GAME}_log.txt"
 $ESUDO kill -9 $(pidof gptokeyb)
 $ESUDO systemctl restart oga_events & 
