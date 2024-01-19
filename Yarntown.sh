@@ -13,7 +13,7 @@ get_controls
 
 # Set variables
 SOLARUSDIR="/$directory/ports/solarus"
-OLDSAVE="/$directory/gamedata/solarus/saves"
+CONFIG="/$directory/gamedata/solarus/saves"
 GAMEDIR="$SOLARUSDIR/games"
 GPTKDIR="$SOLARUSDIR/gptk"
 GAME="yarntown"
