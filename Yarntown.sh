@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Source SDL controls
 if [ -d "/opt/system/Tools/PortMaster/" ]; then
   controlfolder="/opt/system/Tools/PortMaster"
 elif [ -d "/opt/tools/PortMaster/" ]; then
@@ -7,17 +8,19 @@ elif [ -d "/opt/tools/PortMaster/" ]; then
 else
   controlfolder="/roms/ports/PortMaster"
 fi
-
 source $controlfolder/control.txt
-
 get_controls
 
-source $controlfolder/device_info.txt
-
+# Set variables
 SOLARUSDIR="/$directory/ports/solarus"
+OLDSAVE="storage/roms/gamedata/solarus/saves"
 GAMEDIR="$SOLARUSDIR/games"
 GPTKDIR="$SOLARUSDIR/gptk"
 GAME="yarntown"
+
+# Redirect config & saves
+$ESUDO rm -rf ~/"$OLDSAVE"
+ln -sfv "$SOLARUSDIR/saves" ~/"$OLDSAVE"
 
 cd $SOLARUSDIR
 
