@@ -13,7 +13,7 @@ get_controls
 
 # Set variables
 SOLARUSDIR="/$directory/ports/solarus"
-OLDSAVE="storage/roms/gamedata/solarus/saves"
+CONFIG="/$directory/gamedata/solarus/saves"
 GAMEDIR="$SOLARUSDIR/games"
 GPTKDIR="$SOLARUSDIR/gptk"
 GAME="oceansheart"
@@ -23,9 +23,6 @@ if [ ! -d "$CONFIG" ]; then
     mkdir -p "$CONFIG"
 fi
 
-export LIBGL_ES=2
-export LIBGL_GL=21
-export LIBGL_FB=4
 export LD_LIBRARY_PATH="$SOLARUSDIR/lib"
 
 cd $SOLARUSDIR
@@ -37,7 +34,7 @@ $GPTOKEYB "solarus-run" -xbox360 &
 
 # Run the game
 chmod +xwr ./solarus-run
-./solarus-run "$GAMEDIR/$GAME.solarus" 2>&1 | tee -a ./"logs/${GAME}_log.txt"
+./solarus-run "$GAMEDIR/$GAME.solarus" -force-software-rendering 2>&1 | tee -a ./"logs/${GAME}_log.txt"
 $ESUDO kill -9 $(pidof gptokeyb)
 $ESUDO systemctl restart oga_events & 
 printf "\033c" >> /dev/tty1
