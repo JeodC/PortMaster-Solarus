@@ -7,7 +7,9 @@ By running Solarus through PortMaster, we can provide additional libraries as ne
 Unzip to ports folder. Games (the `.solarus` files) need to be downloaded separately and added to the `solarus/games` folder. 
 Find them on the [Solarus Website](https://solarus-games.org/games/).  
 
-You can copy the contents of `gamelist.xml` into your own `gamelist.xml` file.
+You can copy the contents of `gamelist.xml` into your own `gamelist.xml` file.  
+
+Find a Solarus Engine game not listed here? Request it!  
 
 ## Thanks
 The solarus-run binary provided by Cebion.  
