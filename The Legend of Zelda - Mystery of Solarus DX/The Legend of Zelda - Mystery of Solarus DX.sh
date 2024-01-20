@@ -13,12 +13,13 @@ get_controls
 
 # Set variables
 GAMEDIR="/$directory/ports/zelda-mysteryofsolarus"
-CONFIG="/$directory/gamedata/solarus/saves"
 
-#Check for savedir
-if [ ! -d "$CONFIG" ]; then
-    mkdir -p "$CONFIG"
-fi
+# Exports
+export LD_LIBRARY_PATH="$GAMEDIR/lib:/usr/lib"
+
+#Create savedir
+$ESUDO rm -rf ~/.solarus/zsdx
+ln -sfv $GAMEDIR/savedata ~/.solarus/zsdx
 
 cd $GAMEDIR
 

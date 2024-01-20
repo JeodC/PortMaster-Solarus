@@ -9,8 +9,10 @@ Find them on the [Solarus Website](https://solarus-games.org/games/).
 
 You can copy the contents of `gamelist.xml` into your own `gamelist.xml` file.
 
-## Disclaimers
-Certain games have patches applied on first run. These patches help the games boot and play, but may have unintended side effects later on. Other Solarus games have been tested but either would not work or would require extensive patching.
+## To-Do
+-- AmberELEC redirects solarus config dir to `/roms/gamedata/solarus` instead of the home dir `/.solarus`. Find out how.
+-- ArkOS wummle fork GPTOKEYB does not close app as expected with `BACK` + `START`.
+-- `solarus-run` needs to be v1.6.5 with lua5.1 enabled.
 
 ## Thanks
 The solarus-run binary provided by Cebion.  

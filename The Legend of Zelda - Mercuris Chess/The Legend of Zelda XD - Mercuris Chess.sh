@@ -11,14 +11,15 @@ fi
 source $controlfolder/control.txt
 get_controls
 
+# Exports
+export LD_LIBRARY_PATH="$GAMEDIR/lib:/usr/lib"
+
 # Set variables
 GAMEDIR="/$directory/ports/zeldaxd-mercurischess"
-CONFIG="/$directory/gamedata/solarus/saves"
 
-#Check for savedir
-if [ ! -d "$CONFIG" ]; then
-    mkdir -p "$CONFIG"
-fi
+#Create savedir
+$ESUDO rm -rf ~/.solarus/zelda-xd2-mercuris-chess
+ln -sfv $GAMEDIR/savedata ~/.solarus/zelda-xd2-mercuris-chess
 
 cd $GAMEDIR
 

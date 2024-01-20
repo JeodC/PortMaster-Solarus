@@ -13,12 +13,10 @@ get_controls
 
 # Set variables
 GAMEDIR="/$directory/ports/oceansheart"
-CONFIG="/$directory/gamedata/solarus/saves"
 
-#Check for savedir
-if [ ! -d "$CONFIG" ]; then
-    mkdir -p "$CONFIG"
-fi
+#Create savedir
+$ESUDO rm -rf ~/.solarus/oceans-heart-saves
+ln -sfv $GAMEDIR/savedata ~/.solarus/oceans-heart-saves
 
 # Patch stuff
 if [ -d "$GAMEDIR/patch/" ]; then

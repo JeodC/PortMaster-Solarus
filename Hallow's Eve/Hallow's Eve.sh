@@ -13,36 +13,23 @@ get_controls
 
 # Set variables
 GAMEDIR="/$directory/ports/hallowseve"
-CONFIG="/$directory/gamedata/solarus/saves"
 
-#Check for savedir
-if [ ! -d "$CONFIG" ]; then
-    mkdir -p "$CONFIG"
-fi
+# Exports
+export LD_LIBRARY_PATH="$GAMEDIR/lib:/usr/lib"
+
+#Create savedir
+$ESUDO rm -rf ~/.solarus/hallows-eve-saves
+ln -sfv $GAMEDIR/savedata ~/.solarus/hallows-eve-saves
 
 cd $GAMEDIR
-
-# Patch stuff
-if [ -d "$GAMEDIR/patch/" ]; then
-    for solarus_file in "$GAMEDIR/game"/*.solarus; do
-        if [ -e "$solarus_file" ]; then
-            "$GAMEDIR/lib/7za" l "$solarus_file" | grep -i 'coroutine_helper.lua'
-            if [ $? -eq 0 ]; then
-                "$GAMEDIR/lib/7za" a -r "$solarus_file" "$GAMEDIR/patch/scripts/"
-                rm -r "$GAMEDIR/patch/"
-            fi
-        fi
-    done
-fi
 
 # Setup controls
 $ESUDO chmod 666 /dev/tty1
 $ESUDO chmod 666 /dev/uinput
-$GPTOKEYB "solarus-run" -c "hallowseve.gptk" & 
-SDL_GAMECONTROLLERCONFIG="$sdl_controllerconfig"
+$GPTOKEYB "solarus-run" -c "hallowseve.gptk" 2>&1 | tee -a ./"log.txt" & 
 
 # Run the game
 ./solarus-run $GAMEDIR/game/*.solarus 2>&1 | tee -a ./"log.txt"
-$ESUDO kill -9 $(pidof gptokeyb)
+$ESUDO kill -9 $(pidof gptokeyb) >> 2>&1 | tee -a ./"log.txt"
 $ESUDO systemctl restart oga_events & 
 printf "\033c" >> /dev/tty1
