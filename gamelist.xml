@@ -1,7 +1,7 @@
 	<game>
 		<path>./Hallow's Eve.sh</path>
 		<name>Hallow's Eve</name>
-		<image>./solarus/images/hallows-eve-image.png</image>
+		<image>./images/hallows-eve-image.png</image>
 		<rating>0</rating>
 		<releasedate>20201024T210437</releasedate>
 		<developer>Max Mraz</developer>
@@ -10,7 +10,7 @@
 	<game id="202814">
 		<path>./Ocean's Heart.sh</path>
 		<name>Ocean's Heart</name>
-		<image>./solarus/images/oceansheart-image.png</image>
+		<image>./images/oceansheart-image.png</image>
 		<rating>0</rating>
 		<releasedate>20210121T000000</releasedate>
 		<developer>Max Mraz</developer>
@@ -19,7 +19,7 @@
 	<game>
 		<path>./Tunics!.sh</path>
 		<name>Tunics!</name>
-		<image>./solarus/images/tunics-image.png</image>
+		<image>./images/tunics-image.png</image>
 		<rating>0</rating>
 		<releasedate>20240117T090238</releasedate>
 		<developer>Legofarmen</developer>
@@ -28,7 +28,7 @@
 	<game>
 		<path>./Yarntown.sh</path>
 		<name>Yarntown</name>
-		<image>./solarus/images/yarntown-image.png</image>
+		<image>./images/yarntown-image.png</image>
 		<rating>0</rating>
 		<releasedate>20200718T100046</releasedate>
 		<developer>Max Mraz</developer>
@@ -37,26 +37,46 @@
 	<game>
 		<path>./The Legend of Zelda - Book of Mudora.sh</path>
 		<name>The Legend of Zelda: Book of Mudora</name>
-		<image>./solarus/images/loz-bom-image.png</image>
+		<image>./images/loz-bom-image.png</image>
 		<rating>0</rating>
 		<releasedate>2017</releasedate>
 		<developer>Matt Wright</developer>
 		<genre>Adventure</genre>
 	</game>
-		<path>./The Legend of Zelda - Mystery of Solarus.sh</path>
-		<name>The Legend of Zelda: Mystery of Solarus</name>
-		<image>./solarus/images/loz-mos-image.png</image>
+	<game>
+		<path>./The Legend of Zelda - Mystery of Solarus DX.sh</path>
+		<name>The Legend of Zelda: Mystery of Solarus DX</name>
+		<image>./images/loz-mos-image.png</image>
 		<rating>0</rating>
 		<releasedate>2011</releasedate>
 		<developer>Solarus Team</developer>
 		<genre>Adventure</genre>
 	</game>
 	<game>
+		<path>./The Legend of Zelda - Mystery of Solarus XD.sh</path>
+		<name>The Legend of Zelda: Mystery of Solarus XD</name>
+		<image>./images/lozxd-mos-image.png</image>
+		<rating>0</rating>
+		<releasedate>2011</releasedate>
+		<developer>Solarus Team</developer>
+		<genre>Adventure</genre>
+	</game>
+	<game>
+		<path>./The Legend of Zelda XD - Mercuris Chess.sh</path>
+		<name>The Legend of Zelda: Mercuris Chess</name>
+		<image>./images/lozxd-mercurischess-image.png</image>
+		<rating>0</rating>
+		<releasedate>2017</releasedate>
+		<developer>Solarus Team</developer>
+		<genre>Adventure</genre>
+	</game>
+	<game>
 		<path>./The Legend of Zelda - Return of the Hylian.sh</path>
 		<name>The Legend of Zelda: Return of the Hylian</name>
-		<image>./solarus/images/loz-roth-image.png</image>
+		<image>./images/loz-roth-image.png</image>
 		<rating>0</rating>
 		<releasedate>20060101T000000</releasedate>
 		<developer>Vincent Jouillat</developer>
 		<publisher>Vincent Jouillat</publisher>
+		<genre>Adventure</genre>
 	</game>

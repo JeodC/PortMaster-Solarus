@@ -26,7 +26,7 @@ cd $GAMEDIR
 # Setup controls
 $ESUDO chmod 666 /dev/tty1
 $ESUDO chmod 666 /dev/uinput
-$GPTOKEYB "solarus-run" -c "zroth.gptk" & 
+$GPTOKEYB "solarus-run" -c "zmosxd.gptk" & 
 
 # Run the game
 ./solarus-run $GAMEDIR/game/*.solarus 2>&1 | tee -a ./"log.txt"
