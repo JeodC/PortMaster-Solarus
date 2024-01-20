@@ -1,16 +1,16 @@
 back = esc
-start = enter
+start = w
 up = up
 down = down
 left = left
 right = right
 
 a = space
-b = c
-y = x
-x = x
+b = s
+y = a
+x = d
 
-l1 = p
+l1 = tab
 l2 = \"
 r1 = \"
 r2 = \"

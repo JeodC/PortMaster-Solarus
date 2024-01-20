@@ -15,7 +15,10 @@ get_controls
 GAMEDIR="/$directory/ports/oceansheart"
 
 # Exports
-export LD_LIBRARY_PATH="$GAMEDIR/lib"
+export LD_LIBRARY_PATH="$GAMEDIR/lib:/usr/lib"
+export LIBGL_ES=2
+export LIBGL_GL=21
+export LIBGL_FB=4
 
 #Create savedir
 mkdir ~/.solarus
