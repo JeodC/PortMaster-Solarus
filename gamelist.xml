@@ -19,6 +19,7 @@
 	<game>
 		<path>./Tunics!.sh</path>
 		<name>Tunics!</name>
+		<image>./solarus/images/tunics-image.png</image>
 		<rating>0</rating>
 		<releasedate>20240117T090238</releasedate>
 		<developer>Legofarmen</developer>
@@ -34,7 +35,7 @@
 		<genre>Role playing games / Action RPG</genre>
 	</game>
 	<game>
-		<path>./zbom.sh</path>
+		<path>./The Legend of Zelda - Book of Mudora.sh</path>
 		<name>The Legend of Zelda: Book of Mudora</name>
 		<image>./solarus/images/loz-bom-image.png</image>
 		<rating>0</rating>
@@ -42,7 +43,7 @@
 		<developer>Matt Wright</developer>
 		<genre>Adventure</genre>
 	</game>
-		<path>./zmos.sh</path>
+		<path>./The Legend of Zelda - Mystery of Solarus.sh</path>
 		<name>The Legend of Zelda: Mystery of Solarus</name>
 		<image>./solarus/images/loz-mos-image.png</image>
 		<rating>0</rating>
@@ -51,7 +52,7 @@
 		<genre>Adventure</genre>
 	</game>
 	<game>
-		<path>./zelda_roth.sh</path>
+		<path>./The Legend of Zelda - Return of the Hylian.sh</path>
 		<name>The Legend of Zelda: Return of the Hylian</name>
 		<image>./solarus/images/loz-roth-image.png</image>
 		<rating>0</rating>
