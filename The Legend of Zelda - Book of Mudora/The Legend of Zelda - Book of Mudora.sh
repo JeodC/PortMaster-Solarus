@@ -11,14 +11,14 @@ fi
 source $controlfolder/control.txt
 get_controls
 
-# Exports
-export LD_LIBRARY_PATH="$GAMEDIR/lib:/usr/lib"
-
 # Set variables
 GAMEDIR="/$directory/ports/zelda-bookofmudora"
 
+# Exports
+export LD_LIBRARY_PATH="$GAMEDIR/lib"
+
 #Create savedir
-$ESUDO rm -rf ~/.solarus/zbom
+mkdir ~/.solarus
 ln -sfv $GAMEDIR/savedata ~/.solarus/zbom
 
 cd $GAMEDIR

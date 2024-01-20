@@ -11,14 +11,14 @@ fi
 source $controlfolder/control.txt
 get_controls
 
-# Exports
-export LD_LIBRARY_PATH="$GAMEDIR/lib:/usr/lib"
-
 # Set variables
 GAMEDIR="/$directory/ports/yarntown"
 
+# Exports
+export LD_LIBRARY_PATH="$GAMEDIR/lib"
+
 #Create savedir
-$ESUDO rm -rf ~/.solarus/yarntown_saves
+mkdir ~/.solarus
 ln -sfv $GAMEDIR/savedata ~/.solarus/yarntown_saves
 
 cd $GAMEDIR
@@ -26,7 +26,7 @@ cd $GAMEDIR
 # Setup controls
 $ESUDO chmod 666 /dev/tty1
 $ESUDO chmod 666 /dev/uinput
-$GPTOKEYB "solarus-run" -c "zyarntown.gptk" & 
+$GPTOKEYB "solarus-run" -c "yarntown.gptk" & 
 
 # Run the game
 ./solarus-run $GAMEDIR/game/*.solarus 2>&1 | tee -a ./"log.txt"

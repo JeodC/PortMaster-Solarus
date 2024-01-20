@@ -15,10 +15,10 @@ get_controls
 GAMEDIR="/$directory/ports/zelda-mysteryofsolarus"
 
 # Exports
-export LD_LIBRARY_PATH="$GAMEDIR/lib:/usr/lib"
+export LD_LIBRARY_PATH="$GAMEDIR/lib"
 
 #Create savedir
-$ESUDO rm -rf ~/.solarus/zsdx
+mkdir ~/.solarus
 ln -sfv $GAMEDIR/savedata ~/.solarus/zsdx
 
 cd $GAMEDIR
@@ -26,7 +26,7 @@ cd $GAMEDIR
 # Setup controls
 $ESUDO chmod 666 /dev/tty1
 $ESUDO chmod 666 /dev/uinput
-$GPTOKEYB "solarus-run" -c "zmos.gptk" & 
+$GPTOKEYB "solarus-run" -c "zroth.gptk" & 
 
 # Run the game
 ./solarus-run $GAMEDIR/game/*.solarus 2>&1 | tee -a ./"log.txt"

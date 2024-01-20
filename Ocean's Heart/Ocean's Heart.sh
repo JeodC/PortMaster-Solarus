@@ -14,22 +14,12 @@ get_controls
 # Set variables
 GAMEDIR="/$directory/ports/oceansheart"
 
-#Create savedir
-$ESUDO rm -rf ~/.solarus/oceans-heart-saves
-ln -sfv $GAMEDIR/savedata ~/.solarus/oceans-heart-saves
+# Exports
+export LD_LIBRARY_PATH="$GAMEDIR/lib"
 
-# Patch stuff
-if [ -d "$GAMEDIR/patch/" ]; then
-    for solarus_file in "$GAMEDIR/game"/*.solarus; do
-        if [ -e "$solarus_file" ]; then
-            "$GAMEDIR/lib/7za" l "$solarus_file" | grep -i 'swipe_fade.lua'
-            if [ $? -eq 0 ]; then
-                "$GAMEDIR/lib/7za" a -r "$solarus_file" "$GAMEDIR/patch/scripts/"
-                rm -r "$GAMEDIR/patch/"
-            fi
-        fi
-    done
-fi
+#Create savedir
+mkdir ~/.solarus
+ln -sfv $GAMEDIR/savedata ~/.solarus/oceans_heart_saves
 
 cd $GAMEDIR
 

@@ -15,10 +15,10 @@ get_controls
 GAMEDIR="/$directory/ports/hallowseve"
 
 # Exports
-export LD_LIBRARY_PATH="$GAMEDIR/lib:/usr/lib"
+export LD_LIBRARY_PATH="$GAMEDIR/lib"
 
 #Create savedir
-$ESUDO rm -rf ~/.solarus/hallows-eve-saves
+mkdir ~/.solarus
 ln -sfv $GAMEDIR/savedata ~/.solarus/hallows-eve-saves
 
 cd $GAMEDIR

@@ -15,10 +15,10 @@ get_controls
 GAMEDIR="/$directory/ports/zelda-roth-se"
 
 # Exports
-export LD_LIBRARY_PATH="$GAMEDIR/lib:/usr/lib"
+export LD_LIBRARY_PATH="$GAMEDIR/lib"
 
 #Create savedir
-$ESUDO rm -rf ~/.solarus/zelda_roth_se
+mkdir ~/.solarus
 ln -sfv $GAMEDIR/savedata ~/.solarus/zelda_roth_se
 
 cd $GAMEDIR
