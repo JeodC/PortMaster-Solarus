@@ -80,3 +80,21 @@
 		<publisher>Vincent Jouillat</publisher>
 		<genre>Adventure</genre>
 	</game>
+	<game>
+		<path>./The Legend of Zelda - Zeldo's Challenge.sh</path>
+		<name>The Legend of Zelda: Zeldo's Challenge</name>
+		<image>./images/loz-zeldos1-image.png</image>
+		<rating>0</rating>
+		<releasedate>2019</releasedate>
+		<developer>ZeldoRetro</developer>
+		<genre>Adventure</genre>
+	</game>
+	<game>
+		<path>./The Legend of Zelda - Zeldo's Challenge 2.sh</path>
+		<name>The Legend of Zelda: Zeldo's Challenge 2</name>
+		<image>./images/loz-zeldos2-image.png</image>
+		<rating>0</rating>
+		<releasedate>2019</releasedate>
+		<developer>ZeldoRetro</developer>
+		<genre>Adventure</genre>
+	</game>
