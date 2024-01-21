@@ -1,14 +1,14 @@
 back = esc
-start = enter
-up = \"
-down = \"
-left = \"
-right = \"
+start = d
+up = up
+down = down
+left = left
+right = right
 
 a = space
 b = c
 y = x
-x = x
+x = v
 
 l1 = p
 l2 = \"
