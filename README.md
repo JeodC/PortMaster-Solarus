@@ -13,5 +13,5 @@ Find a Solarus Engine game not listed here? Request it!
 
 ## Thanks
 The solarus-run binary provided by Cebion.  
-Max Mraz for assisting with game patching.  
-[Solarus](https://solarus-games.org/)
+Max Mraz for assisting with troubleshooting.  
+[Solarus Team](https://solarus-games.org/).
