@@ -12,24 +12,23 @@ source $controlfolder/control.txt
 get_controls
 
 # Set variables
-GAMEDIR="/$directory/ports/zelda-mysteryofsolarus"
+GAMEDIR="/$directory/ports/zelda-mysteryofsolarusdx"
 
 # Exports
 export LD_LIBRARY_PATH="$GAMEDIR/lib:/usr/lib"
 
-#Create savedir
-mkdir ~/.solarus
-ln -sfv $GAMEDIR/savedata ~/.solarus/zsdx
-
 cd $GAMEDIR
 
 # Setup controls
+$ESUDO chmod 666 /dev/tty0
 $ESUDO chmod 666 /dev/tty1
 $ESUDO chmod 666 /dev/uinput
-$GPTOKEYB "solarus-run" -c "zroth.gptk" & 
+$GPTOKEYB "solarus-run" -c "zmos.gptk" & 
 
 # Run the game
+echo "Loading, please wait... (might take a while!)" > /dev/tty0
 ./solarus-run $GAMEDIR/game/*.solarus 2>&1 | tee -a ./"log.txt"
 $ESUDO kill -9 $(pidof gptokeyb)
 $ESUDO systemctl restart oga_events & 
 printf "\033c" >> /dev/tty1
+printf "\033c" > /dev/tty0

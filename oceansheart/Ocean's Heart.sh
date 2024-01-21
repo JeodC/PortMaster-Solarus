@@ -20,20 +20,19 @@ export LIBGL_ES=2
 export LIBGL_GL=21
 export LIBGL_FB=4
 
-#Create savedir
-mkdir ~/.solarus
-ln -sfv $GAMEDIR/savedata ~/.solarus/oceans_heart_saves
-
 cd $GAMEDIR
 
 # Setup controls
+$ESUDO chmod 666 /dev/tty0
 $ESUDO chmod 666 /dev/tty1
 $ESUDO chmod 666 /dev/uinput
 $GPTOKEYB "solarus-run" -c "oceansheart.gptk" & 
 SDL_GAMECONTROLLERCONFIG="$sdl_controllerconfig"
 
 # Run the game
+echo "Loading, please wait... (might take a while!)" > /dev/tty0
 ./solarus-run $GAMEDIR/game/*.solarus 2>&1 | tee -a ./"log.txt"
 $ESUDO kill -9 $(pidof gptokeyb)
 $ESUDO systemctl restart oga_events & 
 printf "\033c" >> /dev/tty1
+printf "\033c" > /dev/tty0
