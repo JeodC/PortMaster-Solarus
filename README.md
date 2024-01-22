@@ -11,6 +11,7 @@ Find the games on the [Solarus Website](https://solarus-games.org/games/).
 Find a Solarus Engine game not listed here? Request it!  
 
 ## Testing Data
+```
 ╔════════╤══════════════╤═══════════╤═╤════════╤════════════╤═══════════╗
 ║ Tested │ Device       │ CFW       │ │ Tested │ Device     │ CFW       ║
 ╠════════╪══════════════╪═══════════╪═╪════════╪════════════╪═══════════╣
@@ -34,6 +35,7 @@ Find a Solarus Engine game not listed here? Request it!
 ╟────────┼──────────────┼───────────┼─┼────────┼────────────┼───────────╢
 ║        │ Powkiddy x55 │ JelOS     │ │        │            │           ║
 ╚════════╧══════════════╧═══════════╧═╧════════╧════════════╧═══════════╝
+```
 
 ## Thanks
 The solarus-run binary provided by Cebion.  
