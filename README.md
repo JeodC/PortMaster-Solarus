@@ -11,6 +11,7 @@ Find the games on the [Solarus Website](https://solarus-games.org/games/).
 Find a Solarus Engine game not listed here? Request it!  
 
 ## Testing Data
+Created at https://plaintexttools.github.io/plain-text-table/
 ```
 ╔════════╤════════════╤═══════════╤═╤════════╤════════════╤═══════╗
 ║ Tested │ Resolution │ CFW       │ │ Tested │ Resolution │ CFW   ║
@@ -23,7 +24,7 @@ Find a Solarus Engine game not listed here? Request it!
 ╟────────┼────────────┼───────────┼─┼────────┼────────────┼───────╢
 ║        │ 640x480    │ AmberELEC │ │        │ 960x544    │ ArkOS ║
 ╟────────┼────────────┼───────────┼─┼────────┼────────────┼───────╢
-║        │ 640x480    │ ArkOS     │ │        │ 1280x720   │ JelOS ║
+║        │ 640x480    │ ArkOS     │ │ x      │ 1280x720   │ JelOS ║
 ╟────────┼────────────┼───────────┼─┼────────┼────────────┼───────╢
 ║        │ 640x480    │ JelOS     │ │        │ 1920x1152  │ ArkOS ║
 ╚════════╧════════════╧═══════════╧═╧════════╧════════════╧═══════╝
