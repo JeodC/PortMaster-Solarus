@@ -9,14 +9,14 @@
   "attr": {
     "title": "The Legend of Zelda: Mercuris Chess",
     "porter": [
-      "Jeod",
+      "Jeod"
     ],
     "desc": "The sequel to Mystery of Solarus XD. While Link and Zelda were away, a rich businessman bought Hyrule! There begins your next adventure, in a world where everything has a price and where truth and lies become undistinguishable."
     "inst": "Download the game from https://solarus-games.org/games/the-legend-of-zelda-xd2-mercuris-chess/ and put in the zeldaxd-mercurischess/game folder.",
     "genres": [
       "action",
 	  "adventure",
-	  "comedy,"
+	  "comedy"
     ],
     "image": "zeldaxd-mercurischess.screenshot.png",
     "rtr": false,

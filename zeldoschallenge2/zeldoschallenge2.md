@@ -1,5 +1,7 @@
-## Default Gameplay Controls
+## Installation
+Download the game from https://solarus-games.org/games/defi-de-zeldo-ch-2/ and put in the zeldoschallenge2/game folder.
 
+## Default Gameplay Controls
 | Button | Action |
 |--|--|
 |D-PAD|Move|

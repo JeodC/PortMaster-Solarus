@@ -1,5 +1,7 @@
-## Default Gameplay Controls
+## Installation
+Buy the game from GOG or Steam and place the data.solarus file in the oceansheart/game folder.
 
+## Default Gameplay Controls
 | Button | Action |
 |--|--|
 |D-PAD|Move|

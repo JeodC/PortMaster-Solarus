@@ -1,5 +1,7 @@
-## Default Gameplay Controls
+## Installation
+Download game from https://solarus-games.org/games/yarntown/ and put the .solarus file in yarntown/game.
 
+## Default Gameplay Controls
 | Button | Action |
 |--|--|
 |D-PAD|Move|

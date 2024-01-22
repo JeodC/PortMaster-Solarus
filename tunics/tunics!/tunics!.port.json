@@ -9,12 +9,12 @@
   "attr": {
     "title": "Tunics!",
     "porter": [
-      "Jeod",
+      "Jeod"
     ],
     "desc": "Tunics! is a Rogue-like Legend of Zelda quest. It means it’s only dungeons, and they are randomly generated. Moreover, once you’re dead, you’ll have to restart from the beginning, losing all your improvements (weapons, health, etc). It should be considered a well-polished proof-of-concept.",
     "inst": "Download game from https://solarus-games.org/games/tunics/ and put the .solarus file in tunics!/game.",
     "genres": [
-      "rogue-like",
+      "rogue-like"
     ],
     "image": "tunics.screenshot.png",
     "rtr": false,

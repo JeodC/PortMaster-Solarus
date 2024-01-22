@@ -1,5 +1,7 @@
-## Default Gameplay Controls
+## Installation
+Buy the game from https://maxatrillionator.itch.io/hallows-eve and place the .solarus file in the hallowseve/game folder.
 
+## Default Gameplay Controls
 | Button | Action |
 |--|--|
 |D-PAD|Move|

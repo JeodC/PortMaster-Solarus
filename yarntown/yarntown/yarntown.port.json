@@ -15,7 +15,7 @@
     "inst": "Download game from https://solarus-games.org/games/yarntown/ and put the .solarus file in yarntown/game.",
     "genres": [
       "action",
-	  "souls-like",
+	  "souls-like"
     ],
     "image": "yarntown.screenshot.png",
     "rtr": false,
