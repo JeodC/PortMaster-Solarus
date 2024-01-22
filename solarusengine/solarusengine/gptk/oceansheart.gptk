@@ -6,14 +6,14 @@ down = down
 left = left
 right = right
 
-a = space 		# Action
-b = c			# Attack
-y = x			# Item 1
-x = v			# Item 2
+a = space
+b = c
+y = x
+x = v
 
-l1 = f			# Prev Menu
+l1 = f
 l2 = \"
-r1 = g			# Next Menu
+r1 = g
 r2 = \"
 
 l3 = \"
