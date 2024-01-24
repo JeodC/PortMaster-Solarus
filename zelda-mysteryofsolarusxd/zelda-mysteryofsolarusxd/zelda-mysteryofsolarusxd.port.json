@@ -15,7 +15,7 @@
     "inst": "Download the game from https://solarus-games.org/games/the-legend-of-zelda-mystery-of-solarus-xd/ and put in the zelda-mysteryofsolarusxd/game folder.",
     "genres": [
       "action",
-	  "adventure",
+	  "adventure"
     ],
     "image": "zelda-mysteryofsolarusxd.screenshot.png",
     "rtr": false,
