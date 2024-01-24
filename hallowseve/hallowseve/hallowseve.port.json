@@ -15,7 +15,7 @@
     "inst": "Buy the game from https://maxatrillionator.itch.io/hallows-eve and place the .solarus file in the hallowseve/game folder.",
     "genres": [
       "action",
-	  "adventure",
+	  "adventure"
     ],
     "image": "hallowseve.screenshot.png",
     "rtr": false,
