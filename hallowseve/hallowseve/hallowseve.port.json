@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "name": "hallowseve.zip",
   "items": [
     "Hallow's Eve.sh",
@@ -16,6 +16,7 @@
     "genres": [
       "action",
 	  "adventure",
+	  "comedy"
     ],
     "image": "hallowseve.screenshot.png",
     "rtr": false,

@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "name": "zeldaxd-mercurischess.zip",
   "items": [
     "The Legend of Zelda: Mercuris Chess.sh",
@@ -16,7 +16,6 @@
     "genres": [
       "action",
 	  "adventure",
-	  "comedy"
     ],
     "image": "zeldaxd-mercurischess.screenshot.png",
     "rtr": false,
