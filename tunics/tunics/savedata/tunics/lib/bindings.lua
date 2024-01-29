@@ -91,6 +91,7 @@ function bindings.mixin(o)
     end
 
     function o:on_joypad_axis_moved(axis, state)
+	--[[
         local old_state = axis_state[axis] or 0
         axis_state[axis] = state
         if state ~= 0 then
@@ -99,6 +100,7 @@ function bindings.mixin(o)
         elseif old_state ~= 0 then
             release(axis_commands[axis][old_state])
         end
+	--]]
     end
 
 end
