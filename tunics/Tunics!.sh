@@ -16,6 +16,7 @@ GAMEDIR="/$directory/ports/tunics"
 
 # Exports
 export LD_LIBRARY_PATH="$GAMEDIR/lib:/usr/lib"
+export XDG_RUNTIME_DIR="$GAMEDIR"
 
 cd $GAMEDIR
 

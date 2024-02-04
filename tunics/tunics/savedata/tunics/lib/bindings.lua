@@ -78,31 +78,6 @@ function bindings.mixin(o)
         end
     end
 
-    function o:on_joypad_button_pressed(button, modifiers)
-        if buttons[button] then
-            return press(buttons[button])
-        end
-    end
-
-    function o:on_joypad_button_released(button, modifiers)
-        if buttons[button] then
-            return release(buttons[button])
-        end
-    end
-
-    function o:on_joypad_axis_moved(axis, state)
-	--[[
-        local old_state = axis_state[axis] or 0
-        axis_state[axis] = state
-        if state ~= 0 then
-            release(axis_commands[axis][old_state])
-            return press(axis_commands[axis][state])
-        elseif old_state ~= 0 then
-            release(axis_commands[axis][old_state])
-        end
-	--]]
-    end
-
 end
 
 return bindings
