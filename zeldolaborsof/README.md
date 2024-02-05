@@ -1,5 +1,5 @@
 ## Installation
-Download the game from https://solarus-games.org/games/defi-de-zeldo-ch-2/ and put in the `ports/zeldoschallenge2` folder.
+Download the game from https://github.com/ZeldoRetro/labors_zeldo/releases and put in the `ports/zeldolaborsof` folder.
 
 ## Default Gameplay Controls
 | Button | Action |

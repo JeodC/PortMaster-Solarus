@@ -13,6 +13,7 @@ Download the game from https://solarus-games.org/games/defi-de-zeldo-ch-1/ and p
 
 ## Thanks
 Cebion  
+Zeldo  
 Testers and Devs from the PortMaster Discord  
 
 
