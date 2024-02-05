@@ -15,7 +15,7 @@ get_controls
 GAMEDIR="/$directory/ports/yarntown"
 
 # Exports
-export LD_LIBRARY_PATH="$GAMEDIR/lib:/usr/lib"
+export LD_LIBRARY_PATH="$GAMEDIR/libs"
 
 cd $GAMEDIR
 
