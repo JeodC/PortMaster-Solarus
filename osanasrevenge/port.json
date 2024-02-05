@@ -13,14 +13,15 @@
 	  "Jeod"
     ],
     "desc": "Osana's Revenge is a top down shooter filled with memes and private jokes arisen from Yandere Simulator drama and development setbacks, in particular, its first rival (Osana Najimi) being delayed for multiple years. However, you don't have to be familiar with all of this in order to play and enjoy it. ",
-    "inst": "Add the .solarus file from here: https://metaquarius.itch.io/osanas-revenge to game folder.",
+    "inst": "Add the .solarus file from here: https://metaquarius.itch.io/osanas-revenge to the ports/osanasrevenge folder.",
     "genres": [
-      "other"
+      "action",
+	  "adventure"
     ],
     "image": null,
     "rtr": false,
     "exp": false,
-    "runtime": null,
+    "runtime": "solarus-run",
     "reqs": []
   }
 }
