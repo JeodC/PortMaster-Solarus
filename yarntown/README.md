@@ -1,5 +1,5 @@
 ## Installation
-Download game from https://solarus-games.org/games/yarntown/ and put the .solarus file in yarntown/game.
+Download game from https://solarus-games.org/games/yarntown/ and put the .solarus file in `ports/yarntown`.
 
 ## Default Gameplay Controls
 | Button | Action |
