@@ -17,7 +17,7 @@ FIND=$(find $GAMEDIR/games -name "*tunics*.solarus")
 GAME=$(basename "$FIND")
 
 # Exports
-export LD_LIBRARY_PATH="$GAMEDIR/lib:/usr/lib"
+export LD_LIBRARY_PATH="$GAMEDIR/libjit"
 export XDG_RUNTIME_DIR="$GAMEDIR"
 
 cd $GAMEDIR
@@ -26,11 +26,11 @@ cd $GAMEDIR
 $ESUDO chmod 666 /dev/tty0
 $ESUDO chmod 666 /dev/tty1
 $ESUDO chmod 666 /dev/uinput
-$GPTOKEYB "solarus-run" -c "gptk/tunics.gptk" & 
+$GPTOKEYB "solarus-run-jit" -c "gptk/tunics.gptk" & 
 
 # Run the game
 echo "Loading, please wait... (might take a while!)" > /dev/tty0
-./solarus-run ./games/$GAME 2>&1 | tee -a ./"log.txt"
+./solarus-run-jit ./games/$GAME 2>&1 | tee -a ./"log.txt"
 $ESUDO kill -9 $(pidof gptokeyb)
 $ESUDO systemctl restart oga_events & 
 printf "\033c" >> /dev/tty1
