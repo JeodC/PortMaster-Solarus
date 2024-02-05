@@ -13,6 +13,7 @@ Download the game from https://metaquarius.itch.io/osanas-revenge and add the .s
 
 ## Thanks
 Cebion  
+Metaquarius  
 Testers and Devs from the PortMaster Discord  
 
 
