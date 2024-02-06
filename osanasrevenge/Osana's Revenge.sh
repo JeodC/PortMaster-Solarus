@@ -13,14 +13,16 @@ get_controls
 
 # Set variables
 GAMEDIR="/$directory/ports/osanasrevenge"
+runtime="solarus-1.6.5"
+solarus_dir="$HOME/portmaster-solarus"
+solarus_file="$controlfolder/libs/${runtime}.squashfs"
 
 # Exports
-export LD_LIBRARY_PATH="$GAMEDIR/libs"
+export LD_LIBRARY_PATH="$GAMEDIR/libs:$solarus_dir"
 
 cd $GAMEDIR
 
 # Check for runtime
-runtime="solarus-run"
 if [ ! -f "$controlfolder/libs/${runtime}.squashfs" ]; then
   # Check for runtime if not downloaded via PM
   if [ ! -f "$controlfolder/harbourmaster" ]; then
@@ -32,8 +34,6 @@ if [ ! -f "$controlfolder/libs/${runtime}.squashfs" ]; then
 fi
 
 # Setup Solarus
-solarus_dir="$HOME/solarus"
-solarus_file="$controlfolder/libs/${runtime}.squashfs"
 $ESUDO mkdir -p "$solarus_dir"
 $ESUDO umount "$solarus_file" || true
 $ESUDO mount "$solarus_file" "$solarus_dir"
@@ -49,6 +49,7 @@ $GPTOKEYB "$runtime" -c "osana.gptk" &
 echo "Loading, please wait... (might take a while!)" > /dev/tty0
 "$runtime" $GAMEDIR/*.solarus 2>&1 | tee -a ./"log.txt"
 $ESUDO kill -9 $(pidof gptokeyb)
+$ESUDO umount "$solarus_file" || true
 $ESUDO systemctl restart oga_events & 
 printf "\033c" >> /dev/tty1
 printf "\033c" > /dev/tty0
