@@ -1,6 +1,3 @@
-## Installation
-
-
 ## Default Gameplay Controls
 | Button | Action |
 |--|--|
