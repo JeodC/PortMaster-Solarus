@@ -21,6 +21,10 @@
     "rtr": false,
     "exp": false,
     "runtime": "solarus-1.6.5",
+	"arch": [
+		"aarch64",
+		"armhf"
+	],
     "reqs": []
   }
 }
