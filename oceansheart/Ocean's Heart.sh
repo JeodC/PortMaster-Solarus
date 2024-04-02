@@ -19,6 +19,7 @@ get_controls
 
 # Set variables
 GAMEDIR="/$directory/ports/oceansheart"
+DEVICE_ARCH="${DEVICE_ARCH:-aarch64}"
 runtime="solarus-1.6.5"
 solarus_dir="$HOME/portmaster-solarus"
 solarus_file="$controlfolder/libs/${runtime}.squashfs"
@@ -30,6 +31,8 @@ if [ -f "${controlfolder}/libgl_${CFW_NAME}.txt" ]; then
 else
   source "${controlfolder}/libgl_default.txt"
 fi
+
+export LD_LIBRARY_PATH="$solarus_dir:LD_LIBRARY_PATH"
 
 # Check for runtime
 if [ ! -f "$controlfolder/libs/${runtime}.squashfs" ]; then
