@@ -15,16 +15,21 @@ fi
 source $controlfolder/control.txt
 source $controlfolder/device_info.txt
 [ -f "${controlfolder}/mod_${CFW_NAME}.txt" ] && source "${controlfolder}/mod_${CFW_NAME}.txt"
+
 get_controls
+
 
 # Set variables
 GAMEDIR="/$directory/ports/oceansheart"
-DEVICE_ARCH="${DEVICE_ARCH:-aarch64}"
 runtime="solarus-1.6.5"
 solarus_dir="$HOME/portmaster-solarus"
 solarus_file="$controlfolder/libs/${runtime}.squashfs"
 
+> "$GAMEDIR/log.txt" && exec > >(tee "$GAMEDIR/log.txt") 2>&1
+
 cd $GAMEDIR
+
+export DEVICE_ARCH="${DEVICE_ARCH:-aarch64}"
 
 if [ -f "${controlfolder}/libgl_${CFW_NAME}.txt" ]; then 
   source "${controlfolder}/libgl_${CFW_NAME}.txt"
@@ -32,7 +37,8 @@ else
   source "${controlfolder}/libgl_default.txt"
 fi
 
-export LD_LIBRARY_PATH=$solarus_dir:"$GAMEDIR/libs-$DEVICE_ARCH":$LD_LIBRARY_PATH
+# Exports
+export LD_LIBRARY_PATH="$GAMEDIR/libs:$solarus_dir"
 
 # Check for runtime
 if [ ! -f "$controlfolder/libs/${runtime}.squashfs" ]; then
@@ -59,7 +65,7 @@ $GPTOKEYB "$runtime" -c "oceansheart.gptk" &
 
 # Run the game
 echo "Loading, please wait... (might take a while!)" > /dev/tty0
-"$runtime" $GAMEDIR/*.solarus 2>&1 | tee -a ./"log.txt"
+"$runtime" $GAMEDIR/*.solarus
 $ESUDO kill -9 $(pidof gptokeyb)
 $ESUDO umount "$solarus_file" || true
 $ESUDO systemctl restart oga_events & 
